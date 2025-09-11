@@ -10,11 +10,13 @@ class SendMail
 {
     public function Send_Mail($conf, $mailContent)
     {
+        
         //Load Composer's autoloader (created by composer, not included with PHPMailer)
 
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
+
 
 try {
     //Server settings
@@ -40,7 +42,7 @@ try {
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $mailContent['subject'];
     $mail->Body    = $mailContent['body'];
-    
+
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

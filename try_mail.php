@@ -1,5 +1,7 @@
 <?php
+
 require_once 'ClassAutoLoad.php';
+
 
 $mailContent = [
     'name_from' => 'ICS C Community',
