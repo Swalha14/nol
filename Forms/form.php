@@ -14,14 +14,28 @@ class form
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br><br>
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><
+            <input type="password" id="password" name="password" required><br>
     
             
-            <input type="submit" value="Sign Up">
+            <?php
+             $this->submit_btn("Sign Up","signup"); 
+             ?>
             <a href="./">Already have an account? Log in</a>
         </form>
         <?php
     }
+
+    private function submit_btn($value,$name)
+    {
+        ?>
+        <button type="submit" name="<?php echo $name;?>" value="<?php echo $value; ?>"><?php echo $value; ?></button>
+        <?php
+    }
+
+
+
+
+
     public function login() {
         ?>
         <form method="post" action="">
@@ -31,7 +45,10 @@ class form
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <br><br>
-            <input type="submit" value="Log In"> <a href="./">Don't have an account? Sign up</a>
+           <?php
+             $this->submit_btn("Log In","login"); 
+             ?>
+            <a href="./">Don't have an account? Sign up</a>
         </form>
         <?php
     }

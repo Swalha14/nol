@@ -13,4 +13,14 @@ $conf['db_name'] = 'nol';
 
 // Site Language
 $conf['site_lang'] = 'en';
+
+
+//Email Configuration
+$conf['mail_type'] = 'smtp';
+$conf['smtp_host'] = 'smtp.gmail.com';
+$conf['smtp_user'] = 'swalha.ahmed@strathmore.edu';
+$conf['smtp_pass'] = 'sqkt aqdt fkwd nhwo';
+$conf['smtp_port'] = 465; // or 587
+$conf['smtp_secure'] = 'ssl'; // or 'tls'
+
 ?>
