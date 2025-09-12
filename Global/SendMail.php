@@ -10,7 +10,7 @@ class SendMail
 {
     public function Send_Mail($conf, $mailContent)
     {
-        
+
         //Load Composer's autoloader (created by composer, not included with PHPMailer)
 
 
