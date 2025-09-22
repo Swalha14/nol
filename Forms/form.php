@@ -38,6 +38,7 @@ class form
 
    public function signin() {
         ?>
+        <form action="verify.php" method="post">
 <h1>Sign In</h1>
 <form>
   <div class="mb-3">
