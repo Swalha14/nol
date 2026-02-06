@@ -20,7 +20,7 @@ $conf['site_lang'] = 'en';
 $conf['mail_type'] = 'smtp';
 
 $conf['smtp_host'] = 'smtp.gmail.com';
-$conf['smtp_user'] = 'swalha.ahmed@strathmore.edu';
+$conf['smtp_user'] = '';
 
 $conf['smtp_pass'] = '';
 $conf['smtp_port'] = 465; // or 587
@@ -37,9 +37,9 @@ $conf['admin_email'] = 'admin@icsccommunity.com';
 $conf['db_type'] = 'pdo';
 $conf['db_host'] = 'localhost';
 $conf['db_port'] = 3307;   // custom MariaDB port
-$conf['db_user'] = 'root';
-$conf['db_pass'] = 'Swalha2006';
-$conf['db_name'] = 'nol';
+$conf['db_user'] = '';
+$conf['db_pass'] = '';
+$conf['db_name'] = '';
 
 // Site Language
 $conf['site_lang'] = 'en';
@@ -47,8 +47,8 @@ $conf['site_lang'] = 'en';
 // Email Configuration
 $conf['mail_type'] = 'smtp';
 $conf['smtp_host'] = 'smtp.gmail.com';
-$conf['smtp_user'] = 'swalha.ahmed@strathmore.edu';
-$conf['smtp_pass'] = 'sqkt aqdt fkwd nhwo'; 
+$conf['smtp_user'] = '';
+$conf['smtp_pass'] = ''; 
 $conf['smtp_port'] = 465; // or 587
 $conf['smtp_secure'] = 'ssl'; // or 'tls'
 
